@@ -1,0 +1,11 @@
+name: lse1
+region: eu-central-1
+frontend:
+  path: .
+  publish: dist
+  scripts:
+    deploy:
+      - npm install
+      - npm run build
+  subdomain: aquamarine-monthly-swallow
+yamlVersion: 2
